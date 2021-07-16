@@ -118,6 +118,9 @@ module.exports = function(packagedAppPath) {
         requiredModuleRelativePath.endsWith(
           path.join('node_modules', 'temp', 'lib', 'temp.js')
         ) ||
+        requiredModuleRelativePath.endsWith(
+          path.join('node_modules', 'parse5', 'lib', 'index.js')
+        ) ||
         requiredModuleRelativePath === path.join('..', 'exports', 'atom.js') ||
         requiredModuleRelativePath ===
           path.join('..', 'src', 'electron-shims.js') ||
@@ -230,7 +233,11 @@ module.exports = function(packagedAppPath) {
         requiredModuleRelativePath ===
           path.join('..', 'node_modules', 'yauzl', 'index.js') ||
         requiredModuleRelativePath ===
+          path.join('..', 'node_modules', 'util-deprecate', 'node.js') ||
+        requiredModuleRelativePath ===
           path.join('..', 'node_modules', 'winreg', 'lib', 'registry.js') ||
+        requiredModuleRelativePath ===
+          path.join('..', 'node_modules', 'scandal', 'lib', 'scandal.js') ||
         requiredModuleRelativePath ===
           path.join(
             '..',
